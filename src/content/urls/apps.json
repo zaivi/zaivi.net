@@ -1,0 +1,14 @@
+[
+  { "path": "/", "title": "Home", "description": "Personal portfolio homepage" },
+  { "path": "/about", "title": "About", "description": "About me" },
+  { "path": "/agentstate", "title": "Agent State", "description": "AI agent state management" },
+  { "path": "/ai", "title": "AI", "description": "AI projects and tools" },
+  { "path": "/blog", "title": "Blog", "description": "Technical blog and articles" },
+  { "path": "/claw", "title": "Claw", "description": "Claw project" },
+  { "path": "/cv", "title": "CV", "description": "Resume / CV" },
+  { "path": "/i", "title": "Index", "description": "Index page" },
+  { "path": "/insights", "title": "Insights", "description": "Insights and thoughts" },
+  { "path": "/mcp", "title": "MCP", "description": "Model Context Protocol" },
+  { "path": "/photos", "title": "Photos", "description": "Photo gallery" },
+  { "path": "/stamp", "title": "Stamp", "description": "Stamp project" }
+]

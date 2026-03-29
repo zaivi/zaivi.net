@@ -1,0 +1,9 @@
+[
+  { "path": "/github", "title": "GitHub", "description": "GitHub profile", "external": true },
+  { "path": "/in", "title": "LinkedIn", "description": "LinkedIn profile", "external": true },
+  { "path": "/ni", "title": "Notion", "description": "Notion workspace", "external": true },
+  { "path": "/tiktok", "title": "TikTok", "description": "TikTok profile", "external": true },
+  { "path": "/tt", "title": "Twitter", "description": "Twitter/X profile", "external": true },
+  { "path": "/un", "title": "Unsplash", "description": "Unsplash profile", "external": true },
+  { "path": "/x", "title": "X", "description": "X/Twitter profile", "external": true }
+]

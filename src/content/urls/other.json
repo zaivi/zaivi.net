@@ -1,0 +1,7 @@
+[
+  { "path": "/agents", "title": "Agents", "description": "AI agents overview" },
+  { "path": "/api_nini", "title": "API Nini", "description": "API documentation" },
+  { "path": "/api/nini", "title": "API Nini", "description": "API reference" },
+  { "path": "/claude-plugins", "title": "Claude Plugins", "description": "Claude AI plugins" },
+  { "path": "/llm-timeline", "title": "LLM Timeline", "description": "LLM timeline and history" }
+]

@@ -1,0 +1,49 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { Navigation } from '@/components/organisms/Navigation';
+import { Footer } from '@/components/organisms/Footer';
+import { ShortURLsTemplate } from '@/components/templates/ShortURLsTemplate';
+import { AppWindow, Users, Wrench, Link2 } from 'lucide-react';
+import '@/styles/global.css';
+
+import appsData from '@/content/urls/apps.json';
+import socialData from '@/content/urls/social.json';
+import toolsData from '@/content/urls/tools.json';
+import otherData from '@/content/urls/other.json';
+
+const categories = [
+  {
+    name: 'APPS',
+    icon: AppWindow,
+    items: appsData
+  },
+  {
+    name: 'SOCIAL',
+    icon: Users,
+    items: socialData
+  },
+  {
+    name: 'TOOLS',
+    icon: Wrench,
+    items: toolsData
+  },
+  {
+    name: 'OTHER',
+    icon: Link2,
+    items: otherData
+  }
+];
+---
+
+<BaseLayout 
+  title="Short URLs - zaivi.net"
+  description="A collection of short URLs for quick access to various pages and resources."
+>
+  <Navigation client:load />
+  
+  <main>
+    <ShortURLsTemplate client:load categories={categories} />
+  </main>
+  
+  <Footer />
+</BaseLayout>

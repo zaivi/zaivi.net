@@ -1,0 +1,99 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { Navigation } from '@/components/organisms/Navigation';
+import { HeroSection } from '@/components/organisms/HeroSection';
+import { Footer } from '@/components/organisms/Footer';
+import { Card } from '@/components/molecules/Card';
+import { AppWindow, Users, Wrench, Link2, Sparkles, Code, Rocket, Globe } from 'lucide-react';
+import '@/styles/global.css';
+
+const featuredProjects = [
+  {
+    title: 'Agent State',
+    description: 'AI agent state management framework',
+    href: '/agentstate',
+    icon: Sparkles,
+    gridArea: 'col-span-1 row-span-1'
+  },
+  {
+    title: 'MCP',
+    description: 'Model Context Protocol implementation',
+    href: '/mcp',
+    icon: Code,
+    gridArea: 'col-span-1 row-span-1'
+  },
+  {
+    title: 'LLM Timeline',
+    description: 'History of Large Language Models',
+    href: '/llm-timeline',
+    icon: Rocket,
+    gridArea: 'col-span-1 row-span-1'
+  },
+  {
+    title: 'Claude Plugins',
+    description: 'Plugins for Claude AI',
+    href: '/claude-plugins',
+    icon: Globe,
+    gridArea: 'col-span-1 row-span-1'
+  }
+];
+
+const quickLinks = [
+  { title: 'GitHub', href: '/github', count: '100+' },
+  { title: 'LinkedIn', href: '/in', count: '500+' },
+  { title: 'Twitter', href: '/x', count: '1k+' },
+  { title: 'Tools', href: '/ch', count: '8' }
+];
+---
+
+<BaseLayout title="zaivi.net - AI Engineer & Full Stack Developer">
+  <Navigation />
+  
+  <main>
+    <HeroSection />
+    
+    <!-- Featured Projects -->
+    <section className="py-20 px-4">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold text-text-primary mb-8 text-center">
+          Featured <span className="text-gradient">Projects</span>
+        </h2>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {featuredProjects.map((project) => (
+            <Card
+              client:visible
+              title={project.title}
+              description={project.description}
+              href={project.href}
+              icon={project.icon}
+              className={project.gridArea}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+    
+    <!-- Quick Links -->
+    <section className="py-20 px-4">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold text-text-primary mb-8 text-center">
+          Quick <span className="text-gradient">Links</span>
+        </h2>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {quickLinks.map((link) => (
+            <Card
+              client:visible
+              title={link.title}
+              href={link.href}
+              count={link.count}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</BaseLayout>

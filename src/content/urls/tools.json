@@ -1,0 +1,10 @@
+[
+  { "path": "/ch", "title": "ClickHouse", "description": "ClickHouse tool", "external": true },
+  { "path": "/clickhouse", "title": "ClickHouse", "description": "ClickHouse database", "external": true },
+  { "path": "/clickhouse-monitoring", "title": "ClickHouse Monitoring", "description": "ClickHouse monitoring dashboard", "external": true },
+  { "path": "/mo", "title": "Monitor", "description": "Monitoring tool", "external": true },
+  { "path": "/monitor", "title": "Monitor", "description": "Monitoring dashboard", "external": true },
+  { "path": "/numi", "title": "Numi", "description": "Numi calculator", "external": true },
+  { "path": "/rs", "title": "Rust", "description": "Rust projects", "external": true },
+  { "path": "/rust", "title": "Rust", "description": "Rust programming", "external": true }
+]
