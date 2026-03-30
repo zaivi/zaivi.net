@@ -10,9 +10,6 @@ export default defineConfig({
     tailwind()
   ],
   output: 'static',
-  build: {
-    format: 'file'
-  },
   vite: {
     build: {
       cssMinify: true,
