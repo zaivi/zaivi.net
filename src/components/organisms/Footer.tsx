@@ -1,9 +1,9 @@
-import React from 'react';
 import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
 
 const footerLinks = [
   { href: '/', label: 'Home' },
   { href: '/urls', label: 'URLs' },
+  { href: '/docs', label: 'Docs' },
   { href: '/about', label: 'About' },
   { href: '/blog', label: 'Blog' }
 ];

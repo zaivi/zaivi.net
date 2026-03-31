@@ -6,6 +6,7 @@
   { "path": "/blog", "title": "Blog", "description": "Technical blog and articles" },
   { "path": "/claw", "title": "Claw", "description": "Claw project" },
   { "path": "/cv", "title": "CV", "description": "Resume / CV" },
+  { "path": "/docs", "title": "Docs", "description": "Google Docs integration" },
   { "path": "/i", "title": "Index", "description": "Index page" },
   { "path": "/insights", "title": "Insights", "description": "Insights and thoughts" },
   { "path": "/mcp", "title": "MCP", "description": "Model Context Protocol" },

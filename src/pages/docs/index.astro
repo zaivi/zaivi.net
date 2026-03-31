@@ -1,0 +1,21 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { Navigation } from '@/components/organisms/Navigation';
+import { Footer } from '@/components/organisms/Footer';
+import { DocsTemplate } from '@/components/templates/DocsTemplate';
+import docsData from '@/content/docs/docs.json';
+import '@/styles/global.css';
+---
+
+<BaseLayout
+  title="Docs - zaivi.net"
+  description="Access my documents, notes, and resources from Google Docs"
+>
+  <Navigation client:load />
+
+  <main>
+    <DocsTemplate client:load docs={docsData} />
+  </main>
+
+  <Footer />
+</BaseLayout>

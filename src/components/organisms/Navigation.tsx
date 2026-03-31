@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { cn } from '@/utils/cn';
+import { cn } from "@/utils/cn";
 import { Menu, X, Github, Twitter, Linkedin } from 'lucide-react';
 
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/urls', label: 'URLs' },
+  { href: '/docs', label: 'Docs' },
   { href: '/about', label: 'About' },
   { href: '/blog', label: 'Blog' }
 ];

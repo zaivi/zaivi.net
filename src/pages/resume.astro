@@ -1,0 +1,11 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { ResumeTemplate } from '@/components/templates/ResumeTemplate';
+import '@/styles/global.css';
+---
+
+<BaseLayout title="Resume - Curator">
+  <main>
+    <ResumeTemplate client:load />
+  </main>
+</BaseLayout>
